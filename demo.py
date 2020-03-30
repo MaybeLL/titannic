@@ -39,3 +39,8 @@ test_data = pd.read_csv("./data/test.csv")
 
 train = train_data.copy()
 test = test_data.copy()
+
+# print(train.head())
+
+train['Name_length'] = train['Name'].apply(len)
+print(train['Name_length'])
